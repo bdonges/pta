@@ -27,11 +27,8 @@ public class DirectoryReader
 			System.out.println("Working Directory = " + System.getProperty("user.dir"));			
 			
 			String dir = System.getProperty("user.dir") + "\\files\\2014\\";
-			String file = "13_14_directory_combined_columns_version.xls";
-			
-			//dir = "C:\\WWW\\";
-			//file = "directory_working_original.xlsx";
-			
+			String file = "orig_13_14_directory_combined_columns_version.xlsx";
+
 			//..
 			FileInputStream inFile = new FileInputStream(new File(dir + file));
 			             
