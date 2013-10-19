@@ -26,7 +26,9 @@ public class DirectoryReader
 			System.out.println("started reading file at " + new java.util.Date());
 			System.out.println("Working Directory = " + System.getProperty("user.dir"));			
 			
-			String dir = System.getProperty("user.dir") + "\\files\\2014\\";
+			
+			String div = "/";
+			String dir = System.getProperty("user.dir") + div + "files" + div + "2014" + div;
 			String file = "orig_13_14_directory_combined_columns_version.xlsx";
 
 			//..
