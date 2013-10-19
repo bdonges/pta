@@ -185,14 +185,13 @@ public class DirectoryReader
 			    row.createCell(8).setCellValue(createHelper.createRichTextString(e.getApt()));
 			    row.createCell(9).setCellValue(createHelper.createRichTextString(e.getCityStateZip()));
 			    row.createCell(10).setCellValue(createHelper.createRichTextString(e.getPhone()));
-
-			    /*
+			    
 			    System.out.println(e.getLastName() + " " + "Students: " + e.getStudents().size() + " " +
 			    		"Guardians: " + e.getGuardians().size() + " " + e.getPriority() + " " +
 			    		e.getComplex() + " " + e.getStreetNum() + " " +
 			    		e.getStreetName() + " " + e.getStreetType() + " " +
 			    		e.getApt() + " " + e.getCityStateZip() + " " + e.getPhone()); 
-			    */
+			    
 			    rowCnt++;
 			}
 			
