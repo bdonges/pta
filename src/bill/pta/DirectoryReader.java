@@ -24,9 +24,10 @@ public class DirectoryReader
 		try
 		{
 			System.out.println("started reading file at " + new java.util.Date());
-
-			String dir = "C:\\WWW\\2014\\";
-			String file = "orig_13_14_directory_combined_columns_version.xlsx";
+			System.out.println("Working Directory = " + System.getProperty("user.dir"));			
+			
+			String dir = System.getProperty("user.dir") + "\\files\\2014\\";
+			String file = "13_14_directory_combined_columns_version.xls";
 			
 			//dir = "C:\\WWW\\";
 			//file = "directory_working_original.xlsx";
@@ -188,12 +189,13 @@ public class DirectoryReader
 			    row.createCell(9).setCellValue(createHelper.createRichTextString(e.getCityStateZip()));
 			    row.createCell(10).setCellValue(createHelper.createRichTextString(e.getPhone()));
 
+			    /*
 			    System.out.println(e.getLastName() + " " + "Students: " + e.getStudents().size() + " " +
 			    		"Guardians: " + e.getGuardians().size() + " " + e.getPriority() + " " +
 			    		e.getComplex() + " " + e.getStreetNum() + " " +
 			    		e.getStreetName() + " " + e.getStreetType() + " " +
 			    		e.getApt() + " " + e.getCityStateZip() + " " + e.getPhone()); 
-			    
+			    */
 			    rowCnt++;
 			}
 			
