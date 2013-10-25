@@ -42,6 +42,61 @@ public class Entry
 	
 	// --------------------------------------------------
 	// methods	
+	
+	public boolean containsStudent(String firstName)
+	{
+		boolean b = false;
+		for (Student s : getStudents())
+		{
+			if (s.getFirstName().equals(firstName))
+			{
+				b = true;
+				break;
+			}
+		}
+		return b;
+	}
+	
+	public boolean containsGuardian(String firstName)
+	{
+		boolean b = false;
+		for (Guardian g : getGuardians())
+		{
+			if (g.getFirstName().equals(firstName))
+			{
+				b = true;
+				break;
+			}
+		}
+		return b;
+	}	
+	
+	public Guardian getFirstPriority()
+	{
+		Guardian guardian = new Guardian();
+		for (Guardian g : getGuardians())
+		{
+			if (g.getPriority().equals("1.0"))
+			{
+				guardian = g;
+			}
+		}
+		return guardian;
+	}
+	
+	public Guardian getSecondPriority()
+	{
+		Guardian guardian = new Guardian();
+		for (Guardian g : getGuardians())
+		{
+			if (g.getPriority().equals("2.0"))
+			{
+				guardian = g;
+			}
+		}
+		return guardian;
+	}	
+	
 	public String getLastName() {
 		return lastName;
 	}
@@ -108,8 +163,6 @@ public class Entry
 	
 	public String getApt() 
 	{
-		if (apt != null && apt.length() > 0)
-			apt = "Apt " + apt;
 		return apt;
 	}
 	

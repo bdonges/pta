@@ -15,6 +15,7 @@ public class Guardian
 	private String lastName;
 	private String firstName;
 	private String email;
+	private String phoneNumber;
 	
 	// --------------------------------------------------
 	// methods	
@@ -37,9 +38,19 @@ public class Guardian
 		this.firstName = firstName;
 	}
 	public String getEmail() {
+		if (email == null)
+			email = "";
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public void setPhone(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public String getPhone() {
+		if (phoneNumber == null)
+			phoneNumber = "";
+		return phoneNumber;
+	}	
 }
